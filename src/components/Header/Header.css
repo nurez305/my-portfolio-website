@@ -1,0 +1,23 @@
+header {
+    height: 100vh; 
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative ;
+}
+
+
+/* CTA STYLING */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* HEADER SOCIAL */

@@ -87,12 +87,12 @@ a:hover {
 
 .btn {
     width: max-content;
-    display: inline;
+    display: inline-block;
     color: var(--color-primary);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    color: 1px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
     transition: var(--transition);
 }
 
