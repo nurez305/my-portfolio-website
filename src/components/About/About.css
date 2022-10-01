@@ -36,6 +36,12 @@
     gap: 1.5rem;
 }
 
+.anchor_message a{
+    color: rgb(214, 232, 169);
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
 .about_card{
     background: var(--color-bg-variant);
     border: 1px solid transparent;

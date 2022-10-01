@@ -50,6 +50,14 @@ function Experience() {
             <small className='text-light'>Experienced</small>
             </div>
             </article>
+
+            <article className='experience_details'>
+            <BsFillPatchCheckFill className='experience_details_icon' />
+            <div>
+            <h4>Tailwind Css</h4>
+            <small className='text-light'>Experienced</small>
+            </div>
+            </article>
           </div>
 
         </div>
@@ -94,6 +102,22 @@ function Experience() {
             <BsFillPatchCheckFill className='experience_details_icon' />
             <div>
             <h4>Mysql</h4>
+            <small className='text-light'>Experienced</small>
+            </div>
+            </article>
+
+            <article className='experience_details'>
+            <BsFillPatchCheckFill className='experience_details_icon' />
+            <div>
+            <h4>CI/CD</h4>
+            <small className='text-light'>Experienced</small>
+            </div>
+            </article>
+
+            <article className='experience_details'>
+            <BsFillPatchCheckFill className='experience_details_icon' />
+            <div>
+            <h4>Docker</h4>
             <small className='text-light'>Experienced</small>
             </div>
             </article>
