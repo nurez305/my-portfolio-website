@@ -30,7 +30,7 @@ function Contact() {
             <MdOutlineEmail className='contact_option-icon' />
             <h4>Email</h4>
             <h5>saliu.nurudeen@yahoo.com</h5>
-            <a href="mailto:saliu@yahoo.com">Click to send a message</a>
+            <a href="mailto:saliu.nurudeen@yahoo.com">Click to send a message</a>
           </article>
 
           <article className='contact_option'>

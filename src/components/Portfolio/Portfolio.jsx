@@ -11,17 +11,17 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'crypto-currency',
-    github: 'http://github.com',
-    demo : 'http://nairaland.com'
+    title: 'A Movie App',
+    github: 'https://github.com/nurez305/learning-react',
+    demo : 'https://moviestarapp.netlify.app/'
 
   },
   {
     id: 2,
     image: IMG2,
-    title: 'crypto-currency',
-    github: 'http://github.com',
-    demo : 'http://nairaland.com'
+    title: 'A Multipage App',
+    github: 'https://github.com/nurez305/Multipage-project',
+    demo : 'http://multi-page-app.netlify.app'
 
   },
   {
