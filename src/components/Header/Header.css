@@ -10,6 +10,10 @@ header {
     position: relative ;
 }
 
+.header_text {
+    color: var(--color-primary);
+}
+
 
 /* CTA STYLING */
 

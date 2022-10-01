@@ -101,6 +101,10 @@
 /* MEDIA QUERIES FOR SMALL SCREEN */
 
 @media screen and (max-width : 600px) {
+    /* .about_container{
+        padding: 0 1rem;
+    } */
+
     .about_me {
         width: 65%;
         margin:  0 auto 3rem;

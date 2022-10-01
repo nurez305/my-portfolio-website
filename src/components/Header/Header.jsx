@@ -8,8 +8,8 @@ function Header() {
   return (
     <header>
       <div className='container header_container'>
-          <h5>Hello I'm</h5>
-          <h1>Nurudeen Saliu</h1>
+          <h3><span className='header_text'>Hello</span> I'm</h3>
+          <h1><span className='header_text'>Nurudeen</span> Saliu</h1>
           <h5 className="text-light">Fullstack Developer</h5>
           <CTA />
           <Headersocial />

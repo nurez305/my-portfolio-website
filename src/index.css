@@ -138,12 +138,13 @@ img {
 /* MEDIA QUERIES FOR SMALL SCREEN */
 
 @media screen and (max-width : 600px) {
-    body{
+    /* body{
         padding: 0 1rem;
-    }
+    } */
 
     .container {
         width: var(--container-width-sm);
+        padding: 0 1.4rem;
     }
 
     section > h2{
