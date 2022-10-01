@@ -12,8 +12,8 @@
 }
 
 .experience_container > div:hover {
-    background: transparent;
-    background-color: rgb(52, 18, 81);
+    /* background: transparent; */
+    background-color: rgb(36, 34, 37);
     cursor: default;
 }
 

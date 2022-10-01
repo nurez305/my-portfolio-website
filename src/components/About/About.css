@@ -5,7 +5,8 @@
 }
 
 .about_me{
-    width: 100%;
+    width: 88%;
+    height: 380px;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(45deg, 
@@ -22,6 +23,7 @@
     overflow: hidden;
     transform: rotate(15deg);
     transition: var(--transition);
+    /* height: 350px; */
 }
 
 .about_me-image:hover {
@@ -84,6 +86,7 @@
 
     .about_me {
         width: 50%;
+        height: 290px;
         margin: 2rem auto 4rem;
     }
 
