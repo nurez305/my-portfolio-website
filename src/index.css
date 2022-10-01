@@ -22,7 +22,7 @@
     --transition: all 400ms ease;
     --container-width-lg : 75%;
     --container-width-md : 86%;
-    --container-width-ms : 90 %;
+    --container-width-ms : 90%;
 
 }
 
@@ -60,7 +60,7 @@ h1 {
 
 section {
     margin-top: 8rem;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 section > h2 , section > h5 {
@@ -130,6 +130,10 @@ img {
 /* MEDIA QUERIES FOR SMALL SCREEN */
 
 @media screen and (max-width : 600px) {
+    body{
+        padding: 0 1rem;
+    }
+
     .container {
         width: var(--container-width-sm);
     }
