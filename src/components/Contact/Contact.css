@@ -9,7 +9,6 @@ gap: 12%;
     display: flex;
     gap: 1.2rem;
     flex-direction: column;
-    gap: 1.2rem;
 }
 
 .contact_option{
@@ -47,7 +46,7 @@ form{
 }
 
 input, textarea{
-    width: 100%;
+    width: 95%;
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
