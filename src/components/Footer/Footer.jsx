@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import {FaFacebookF} from 'react-icons/fa'
+import {BsLinkedin} from "react-icons/bs"
 import {BsInstagram} from 'react-icons/bs'
 import {FaTwitter} from 'react-icons/fa'
 
@@ -17,7 +17,7 @@ function Footer() {
      
     </ul>
     <div className='footer_socials'>
-      <a href="https://www.facebook.com/Nurez305"><FaFacebookF /></a>
+    <a href="https://www.linkedin.com/in/nurudeen-saliu-4ab897ab/" target="_blank"><BsLinkedin /></a>
       <a href="https://www.instagram.com/nurez154/"><BsInstagram/></a>
       <a href="https://twitter.com/nurez154"><FaTwitter/></a>
     </div>
