@@ -4,6 +4,8 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {FaFacebookMessenger} from 'react-icons/fa'
 import {BsWhatsapp} from 'react-icons/bs'
 import emailjs from 'emailjs-com'
+import swal from 'sweetalert';
+
 
 function Contact() {
   const form = useRef();
@@ -15,10 +17,15 @@ function Contact() {
       .then((result) => {
           console.log(result.text);
           e.target.reset()
+          swal({
+            icon: "success",
+            text: "Thank you! Your messages have been received.",
+          });
       }, (error) => {
           console.log(error.text);
       });
   };
+
 
   return (
     <section id='contact'>
@@ -52,7 +59,7 @@ function Contact() {
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name='email' placeholder='Your Email' required />
           <textarea name="message" id="" rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <button type='submit' className='btn btn-primary' >Send Message</button>
         </form>
       </div>
       
