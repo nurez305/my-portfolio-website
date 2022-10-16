@@ -10,7 +10,7 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'An Aitime-to-cash App',
+    title: 'Airtime-to-cash App',
     desc: "The Airtime to Cash app allows users to sell their airtime for cash. It features a wallet, which holds the funds users receive in return for sold airtime and allows for withdrawal of those funds into the user’s designated bank account.",
     github: 'https://github.com/nurez305/Airtime-2-cash-app',
     demo : 'https://airtimetocashpodg.netlify.app/'
