@@ -74,7 +74,9 @@
 
 .about_content p{
     margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+    color: white;
+    font-size: 13px;
+    text-align: center;
 }
 
 

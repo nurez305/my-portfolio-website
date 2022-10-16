@@ -1,61 +1,56 @@
 import React from 'react'
 import "./Portfolio.css"
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import IMG1 from '../../assets/airtime.png'
+import IMG2 from '../../assets/ecom.png'
+import IMG3 from '../../assets/movies.png'
+import IMG4 from '../../assets/youtube.png'
+import IMG5 from '../../assets/school.png'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'A Movie App',
-    github: 'https://github.com/nurez305/learning-react',
-    demo : 'https://moviestarapp.netlify.app/'
+    title: 'An Aitime-to-cash App',
+    desc: "The Airtime to Cash app allows users to sell their airtime for cash. It features a wallet, which holds the funds users receive in return for sold airtime and allows for withdrawal of those funds into the user’s designated bank account.",
+    github: 'https://github.com/nurez305/Airtime-2-cash-app',
+    demo : 'https://airtimetocashpodg.netlify.app/'
 
   },
   {
     id: 2,
     image: IMG2,
-    title: 'A Multipage App',
-    github: 'https://github.com/nurez305/Multipage-project',
-    demo : 'http://multi-page-app.netlify.app'
-
+    title: 'An  E-commerce App',
+    desc: "A responsive e-commerce application built with react and stripe for product checkout.",
+    github: 'https://github.com/nurez305/project_e_commerce-main',
+    demo : 'http://nurez-store.netlify.app'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'crypto-currency',
-    github: 'http://github.com',
-    demo : 'http://nairaland.com'
+    title: 'A Movie App',
+    desc: "This is a basic Movie Search Application where you can search for any movie of your choice. You pass in a keyword in the search bar and movies related to your keyword will be displayed.",
+    github: 'https://github.com/nurez305/learning-react',
+    demo : 'https://moviestarapp.netlify.app/'
 
   },
   {
     id: 4,
     image: IMG4,
-    title: 'crypto-currency',
-    github: 'http://github.com',
-    demo : 'http://nairaland.com'
+    title: 'Youtune Clone App',
+    desc: "A fully responsive youtube clone app built with React, Materia-Ui and Rapid-Api.",
+    github: 'https://github.com/nurez305/project_youtube_clone-main',
+    demo : 'http://nurez-youtube.netlify.app'
 
   },
   {
     id: 5,
     image: IMG5,
-    title: 'crypto-currency',
-    github: 'http://github.com',
-    demo : 'http://nairaland.com'
+    title: 'Multipage school website',
+    desc: "A complete responsive multi-page education/school website built with HTML, CSS, and javascript.",
+    github: 'https://github.com/nurez305/Multipage-project',
+    demo : 'http://checkitoutnow.netlify.app'
 
   },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'crypto-currency',
-    github: 'http://github.com',
-    demo : 'http://nairaland.com'
-
-  }
 ]
 
 const Portfolio = () => {
@@ -65,13 +60,14 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className='container portfolio_container'>
-        {data.map(({id, image, title, github, demo})=>{
+        {data.map(({id, image, title,desc, github, demo})=>{
           return(
           <article key={id} className='portfolio_item'>
           <div className='portfolio_item-img'> 
           <img src={image} alt={title} />
           </div>
           <h3>{title}</h3>
+          <p>{desc}</p>
           <div className="portfolio_item-cta">
           <a href={github} className='btn' target='_blank '>Github</a>
           <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
