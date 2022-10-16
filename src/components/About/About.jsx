@@ -44,15 +44,15 @@ function About() {
             I have experience in developing and deploying websites utilizing
             various open-source packages.I have extensive experience in HTML,
             CSS, JavaScript, Typescript, NodeJS, ExpressJS, ReactJS, MongoDB,
-            Docker and Dockerhub, TDD with jest and Git and Github.
+            Docker and Dockerhub, TDD with jest and Git and Github.<br /> <br /> 
             I am skilled in using these frameworks to develop web
             applications based on Single Page Applications (SPA) architectures.
             I also possess skills in writing SQL queries using popular
             database servers such as MySQL. In addition to my development work,
             I am skilled in troubleshooting problems and resolving bugs within
-            an existing system.
+            an existing system.<br /> <br /> 
             Other skills include Scrum, Agile Methodology, Jira, Communication,
-            Team Coordination.If it will solve a problem, I want to be
+            Team Coordination. If it will solve a problem, I want to be
             part of it. Just send a{" "}
             <span className="anchor_message">
               <a href="#contact">Click To Message</a>
