@@ -24,8 +24,17 @@ const data = [
     github: 'https://github.com/nurez305/project_e_commerce-main',
     demo : 'http://nurez-store.netlify.app'
   },
+
   {
     id: 3,
+    image: IMG2,
+    title: 'A Meal order App',
+    desc: "A responsive meal order application built with ReactJS and Firebase for storing data.",
+    github: 'https://github.com/nurez305/Meal-order-app',
+    demo : 'https://fastordermeal.netlify.app/'
+  },
+  {
+    id: 4,
     image: IMG3,
     title: 'A Movie App',
     desc: "This is a basic Movie Search Application where you can search for any movie of your choice. You pass in a keyword in the search bar and movies related to your keyword will be displayed.",
@@ -34,7 +43,7 @@ const data = [
 
   },
   {
-    id: 4,
+    id: 5,
     image: IMG4,
     title: 'Youtune Clone App',
     desc: "A fully responsive youtube clone app built with React, Materia-Ui and Rapid-Api.",
@@ -43,7 +52,7 @@ const data = [
 
   },
   {
-    id: 5,
+    id: 6,
     image: IMG5,
     title: 'Multipage school website',
     desc: "A complete responsive multi-page education/school website built with HTML, CSS, and javascript.",
