@@ -5,6 +5,7 @@ import IMG2 from '../../assets/ecom.png'
 import IMG3 from '../../assets/movies.png'
 import IMG4 from '../../assets/youtube.png'
 import IMG5 from '../../assets/school.png'
+import IMG6 from '../../assets/meal-order.png'
 
 const data = [
   {
@@ -27,7 +28,7 @@ const data = [
 
   {
     id: 3,
-    image: IMG2,
+    image: IMG6,
     title: 'A Meal order App',
     desc: "A responsive meal order application built with ReactJS and Firebase for storing data.",
     github: 'https://github.com/nurez305/Meal-order-app',
