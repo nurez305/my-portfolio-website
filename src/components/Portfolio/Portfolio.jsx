@@ -30,7 +30,7 @@ const data = [
     id: 3,
     image: IMG6,
     title: 'A Meal order App',
-    desc: "A responsive meal order application built with ReactJS and Firebase for storing data.",
+    desc: "A full-stack responsive application for ordering Nigerian foods. The client-side was built with ReactJs, and the server side was built with Nodejs, Express, and MongoDB for the database.",
     github: 'https://github.com/nurez305/Meal-order-app',
     demo : 'https://fastordermeal.netlify.app/'
   },
