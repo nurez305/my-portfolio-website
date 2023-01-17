@@ -7,9 +7,9 @@ import {FaTwitter} from 'react-icons/fa'
 function Footer() {
   return (
    <footer>
-    <a href="#" className='footer_logo'>Nurudeen</a>
+    <a href="#home" className='footer_logo'>Nurudeen</a>
     <ul className='permalink'>
-      <li><a href="#">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -17,7 +17,7 @@ function Footer() {
      
     </ul>
     <div className='footer_socials'>
-    <a href="https://www.linkedin.com/in/nurudeen-saliu-4ab897ab/" target="_blank"><BsLinkedin /></a>
+    <a href="https://www.linkedin.com/in/nurudeen-saliu-4ab897ab/"><BsLinkedin /></a>
       <a href="https://www.instagram.com/nurez154/"><BsInstagram/></a>
       <a href="https://twitter.com/nurez154"><FaTwitter/></a>
     </div>

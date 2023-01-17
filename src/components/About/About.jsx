@@ -23,13 +23,13 @@ function About() {
             <article className="about_card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>1+ Years Working Experience</small>
+              <small>4+ Years Working Experience</small>
             </article>
 
             <article className="about_card">
               <FaUserTie className="about_icon" />
               <h5>Employer</h5>
-              <small>1+ Employer</small>
+              <small>2+ Employer</small>
             </article>
 
             <article className="about_card">
