@@ -1,7 +1,3 @@
-#home {
-   padding: 0;
-}
-
 .hero-main-cont {
    width: 100%;
    display: flex;
@@ -9,12 +5,6 @@
    align-self: start;
    margin-top: -6rem;
    justify-content: center;
-   box-shadow: blue;
-   border-radius: 20px;
-}
-
-#dark .hero-main-cont {
-   box-shadow: var(--inset-box-dark);
 }
 
 .cta {
@@ -71,52 +61,6 @@
    align-items: center;
 }
 
-.hero-subtext {
-   color: var(--black);
-   display: flex;
-   gap: 5px;
-   font-size: 15px;
-}
-
-#dark .hero-subtext {
-   color: var(--yellow);
-}
-
-.what_am_i {
-   font-size: 20px;
-}
-
-.head-span-text {
-   color: var(--alt-text);
-   font-size: 13px;
-}
-
-.btn {
-   text-decoration: none;
-   color: inherit;
-   box-shadow: var(--box-shadow);
-   padding: .5rem 1rem;
-   border-radius: 5px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-   width: max-content;
-}
-
-#dark .btn {
-   box-shadow: var(--box-shadow-dark);
-}
-
-.btn:visited,
-.btn:focus {
-   box-shadow: var(--inset-box);
-}
-
-#dark .btn:visited,
-#dark .btn:focus {
-   box-shadow: var(--inset-box-dark);
-}
 
 .btn-div {
    display: flex;
