@@ -4,6 +4,7 @@ import ME from "../../assets/nurez.jpeg";
 import { FaAward } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa";
 import { FaRegFolderOpen } from "react-icons/fa";
+import {motion} from 'framer-motion'
 
 function About() {
   return (
@@ -12,13 +13,21 @@ function About() {
       <h2>About Me</h2>
 
       <div className="container about_container">
-        <div className="about_me">
+        <motion.div className="about_me"
+        initial={{x: "-100vw"}}
+        animate={{x: 0}}
+        transition={{type: "spring", stiffness: 50}}
+        >
           <div className="about_me-image">
             <img src={ME} alt="" />
           </div>
-        </div>
+        </motion.div>
 
-        <div className="about_content">
+        <motion.div className="about_content"
+        initial={{x: "100vw"}}
+        animate={{x: 0}}
+        transition={{type: "spring", stiffness: 50}}
+        >
           <div className="about_cards ">
             <article className="about_card">
               <FaAward className="about_icon" />
@@ -64,7 +73,7 @@ function About() {
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

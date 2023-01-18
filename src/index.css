@@ -19,8 +19,16 @@
     --color-white : #fff;
     --color-light : rgba(255,255,255, 0.6);
 
-    --color-bg : #252b27;
-    --color-bg-variant : #1a1702;
+    /* --color-bg : #252b27; */
+    --color-bg:  blue;
+    --color-bg-variant :linear-gradient(
+        97.86deg,
+        #9a0ced 0%,
+        #691497 23.65%,
+        rgb(107, 14, 137) 6%,
+        #cd65f3 100%
+      );;
+    /* --color-bg-variant : #1a1702; */
     --color-primary : #cee2b3;
     /* --color-primary-variant : rgba(13, 14, 14, 0.4); */
     /* --color-white : #fff; */
@@ -44,10 +52,10 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
+    background: rgb(12, 12, 226);
     color: var(--color-white);
     line-height: 1.7;
-    /* background-image: url(./assets/bg-texture.png); */
+    background-image: url(./assets/bg-texture.png);
 }
 
 

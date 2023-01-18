@@ -1,5 +1,5 @@
 footer {
-    background: rgb(29, 25, 25);
+    background: var(--color-bg);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -34,7 +34,7 @@ footer a{
 }
 
 .footer_socials a {
-    background: var(--color-bg);
+    background: rgb(21, 25, 21);
     color: var(--color-white);
     padding: 0.8rem;
     border-radius: 0.7rem;
@@ -44,8 +44,8 @@ footer a{
 
 .footer_socials a:hover{
     background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+    color: white;
+    border-color: red;
 }
 
 .footer_copywrite{
