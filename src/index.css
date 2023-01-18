@@ -55,7 +55,7 @@ body {
     background: rgb(12, 12, 226);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(./assets/bg-texture.png);
+    /* background-image: url(./assets/bg-texture.png); */
 }
 
 
