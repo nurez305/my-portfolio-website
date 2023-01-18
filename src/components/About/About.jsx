@@ -7,56 +7,16 @@ import { FaRegFolderOpen } from "react-icons/fa";
 import {motion} from 'framer-motion'
 
 function About() {
-
-  const leftAboutVariant = {
-    hidden: {
-      x: "-100%",
-      opacity: 0,
-      scale: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      rotate: 360,
-      scale: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 2,
-      },
-    },
-  };
-  const rightAboutVariant = {
-    hidden: {
-      x: "100%",
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.1,
-        duration: 1,
-      },
-    },
-  };
-
-
   return (
     <section id="about">
       <h5>Get To Know About Me</h5>
       <h2>About Me</h2>
 
-      <motion.div className="container about_container"
-      initial={"hidden"}
-      whileInView={"show"}
-      transition={{ staggerChildren: 0.5 }}
-      
-      >
+      <div className="container about_container">
         <motion.div className="about_me"
-        viewport={{ once: false, amount: 0.5 }}
-        variants={leftAboutVariant}
+        initial={{x: "-100vw"}}
+        animate={{x: 0}}
+        transition={{type: "spring", stiffness: 50}}
         >
           <div className="about_me-image">
             <img src={ME} alt="" />
@@ -64,8 +24,9 @@ function About() {
         </motion.div>
 
         <motion.div className="about_content"
-        viewport={{ once: false, amount: 0.5 }}
-        variants={rightAboutVariant}
+        initial={{x: "100vw"}}
+        animate={{x: 0}}
+        transition={{type: "spring", stiffness: 50}}
         >
           <div className="about_cards ">
             <article className="about_card">
@@ -113,7 +74,7 @@ function About() {
             Let's Talk
           </a>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 }
