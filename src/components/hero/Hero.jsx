@@ -50,6 +50,7 @@ const Hero = () => {
             <p className="hello_text">
               Hello <span className="wave">👋</span> ,
             </p>
+            {/* <span className="tagline">Welcome to my Portfolio</span> */}
             <div className="text_name">
               I am <span className="alt-text-yellow">
                  <Typewriter
@@ -64,8 +65,7 @@ const Hero = () => {
               </span>
             </div>
             <h1 className="hero-main-text ">
-              I am a full Stack developer specializing
-              <span className="alt-text"> in NodeJS</span>
+              I am a full Stack developer specializing NodeJS
             </h1>
 
             <div className="btn-div">

@@ -36,7 +36,7 @@
 
 .hero-main-text {
    font-size: 54px;
-   line-height: 2;
+   line-height: 1.5;
 }
 
 .hero-img {
@@ -50,6 +50,18 @@
    font-size: 18px;
    flex: 1;
 }
+
+/* .tagline {
+   font-weight: 700;
+   letter-spacing: 0.8px;
+   padding: 8px 10px;
+   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   font-size: 20px;
+   margin-bottom: 16px;
+   display: inline-block;
+   width: 45%;
+ } */
 
 /* .alt-text {
    color: red;
@@ -108,6 +120,7 @@
 
    .hero-main-text {
       font-size: 25px;
+      line-height: 2;
    }
 
    .btn {
@@ -121,4 +134,10 @@
    .hero-subtext {
       font-size: 12px;
    }
+
+   /* .tagline {
+      width: 86%;
+      font-size: 16px;
+      text-align: center;
+   } */
 }

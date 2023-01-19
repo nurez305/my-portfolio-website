@@ -58,6 +58,22 @@ function Experience() {
             <small className='text-light'>Experienced</small>
             </div>
             </article>
+
+            <article className='experience_details'>
+            <BsFillPatchCheckFill className='experience_details_icon' />
+            <div>
+            <h4>Redux</h4>
+            <small className='text-light'>Experienced</small>
+            </div>
+            </article>
+
+            <article className='experience_details'>
+            <BsFillPatchCheckFill className='experience_details_icon' />
+            <div>
+            <h4>Git & Github</h4>
+            <small className='text-light'>Experienced</small>
+            </div>
+            </article>
           </div>
 
         </div>
@@ -110,6 +126,14 @@ function Experience() {
             <BsFillPatchCheckFill className='experience_details_icon' />
             <div>
             <h4>CI/CD</h4>
+            <small className='text-light'>Experienced</small>
+            </div>
+            </article>
+
+            <article className='experience_details'>
+            <BsFillPatchCheckFill className='experience_details_icon' />
+            <div>
+            <h4>Postgress</h4>
             <small className='text-light'>Experienced</small>
             </div>
             </article>

@@ -44,14 +44,14 @@ function Contact() {
             <FaFacebookMessenger className='contact_option-icon'/>
             <h4>Messanger</h4>
             <h5>saliu Nurudeen</h5>
-            <a href="https://m.me/Nurez305" target="_blank">Click to send a message</a>
+            <a href="https://m.me/Nurez305" target="_blank" rel='noreferrer'>Click to send a message</a>
           </article>
 
           <article className='contact_option'>
             <BsWhatsapp className='contact_option-icon' />
             <h4>WhatsApp</h4>
             <h5>+2347036509595</h5>
-            <a href="https://wa.me/+2347036509595" target="_blank">Click to send a message</a>
+            <a href="https://wa.me/+2347036509595" target="_blank" rel='noreferrer'>Click to send a message</a>
           </article>
         </div>
 

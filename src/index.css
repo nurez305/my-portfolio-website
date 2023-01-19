@@ -52,8 +52,14 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* background: rgb(12, 12, 226); */
     background: #1f1f38;;
+
+    /* background: url(../src/assets/banner-bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;      */
+
     color: var(--color-white);
     line-height: 1.7;
     /* background-image: url(./assets/bg-texture.png); */
