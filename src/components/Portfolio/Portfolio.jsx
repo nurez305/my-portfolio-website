@@ -41,7 +41,7 @@ const data = [
     image: IMG10,
     title: 'A Payment UI/UX',
     desc: "Modern UI/UX website using React.js & Tailwind CSS",
-    github: 'https://github.com/nurez305/Meal-order-app',
+    github: 'https://github.com/nurez305/landing-page-ui',
     demo : 'https://bankpay.netlify.app/'
   },
   {
