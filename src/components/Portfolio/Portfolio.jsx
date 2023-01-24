@@ -3,6 +3,7 @@ import "./Portfolio.css"
 import IMG1 from '../../assets/airtime.png'
 import IMG2 from '../../assets/ecom.png'
 import IMG3 from '../../assets/movies.png'
+import IMG10 from '../../assets/IMG-10.png'
 import IMG4 from '../../assets/youtube.png'
 import IMG5 from '../../assets/school.png'
 import IMG6 from '../../assets/meal-order.png'
@@ -34,8 +35,17 @@ const data = [
     github: 'https://github.com/nurez305/Meal-order-app',
     demo : 'https://fastordermeal.netlify.app/'
   },
+
   {
     id: 4,
+    image: IMG10,
+    title: 'A Payment UI/UX',
+    desc: "Modern UI/UX website using React.js & Tailwind CSS",
+    github: 'https://github.com/nurez305/Meal-order-app',
+    demo : 'https://bankpay.netlify.app/'
+  },
+  {
+    id: 5,
     image: IMG3,
     title: 'A Movie App',
     desc: "This is a basic Movie Search Application where you can search for any movie of your choice. You pass in a keyword in the search bar and movies related to your keyword will be displayed.",
@@ -44,7 +54,7 @@ const data = [
 
   },
   {
-    id: 5,
+    id: 6,
     image: IMG4,
     title: 'Youtune Clone App',
     desc: "A fully responsive youtube clone app built with React, Materia-Ui and Rapid-Api.",
@@ -53,7 +63,7 @@ const data = [
 
   },
   {
-    id: 6,
+    id: 7,
     image: IMG5,
     title: 'Multipage school website',
     desc: "A complete responsive multi-page education/school website built with HTML, CSS, and javascript.",
