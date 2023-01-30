@@ -65,7 +65,7 @@ const Hero = () => {
               </span>
             </div>
             <h1 className="hero-main-text ">
-              I am a full Stack developer specializing in ReactJS and NodeJS
+              I am a full Stack developer specializing in <span className="react-text">ReactJS</span> and <span className="node-text">NodeJS</span>
             </h1>
 
             <div className="btn-div">

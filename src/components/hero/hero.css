@@ -73,6 +73,14 @@
    align-items: center;
 }
 
+.react-text {
+color: rgb(9, 230, 9);
+}
+
+.node-text{
+   color: lightblue;
+}
+
 
 .btn-div {
    display: flex;
@@ -119,7 +127,7 @@
    }
 
    .hero-main-text {
-      font-size: 25px;
+      font-size: 24px;
       line-height: 2;
    }
 
