@@ -48,7 +48,7 @@ function About() {
             </article>
           </div>
           <p>
-            I am a Full Stack Developer with over a year of
+            I am a Full Stack Developer with over 4 years of
             experience, specializing in NodeJS.
             I have experience in developing and deploying websites utilizing
             various open-source packages.I have extensive experience in HTML,
