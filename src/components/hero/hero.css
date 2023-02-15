@@ -41,6 +41,7 @@
 
 .hero-img {
    width: 100%;
+   margin-top: 3rem;
 }
 
 .hero-sub-cont-1 {
@@ -142,9 +143,9 @@ color: rgb(9, 230, 9);
       font-size: 12px;
    }
 
-   /* .tagline {
-      width: 86%;
-      font-size: 16px;
-      text-align: center;
-   } */
+   .hero-img {
+      margin-top: 0;
+   }
+
+   
 }

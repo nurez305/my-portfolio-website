@@ -85,10 +85,14 @@ section {
     margin-top: 10rem;
     /* height: 100vh; */
 }
+section > h5 {
+    padding-top: 6rem;
+}
 
 section > h2 , section > h5 {
     text-align: center;
     color: var(--color-light);
+    
 }
 
 section > h2{
@@ -163,6 +167,6 @@ img {
     }
 
     section > h2{
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
     }
 }
