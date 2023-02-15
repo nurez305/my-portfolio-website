@@ -65,18 +65,18 @@
         right: 0;
         top: 5.4rem;
         width: 100%;
-        transition: all ease-in;
+        transition: all 0.5s;
         
        }
     
        #display-nav{
-        animation: slide-in 0.7s ease-in;
+        animation: slide-in 0.7s ease-in-out;
         
        }
        
        #no-display {
            left: -100%;
-           animation: slide-out 0.4s ease-in-out;
+           animation: slide-out 0.5s ease-in-out;
         
        }
     
@@ -99,7 +99,7 @@
     
        @keyframes slide-out {
         0%{
-            transform: translateX(0);
+            transform: translateX(0%);
         }
         100%{
             transform: translateX(-100%);
