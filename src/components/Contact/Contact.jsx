@@ -1,10 +1,11 @@
 import React, {useRef} from 'react'
+import { toast } from "react-toastify";
 import "./Contact.css"
 import {MdOutlineEmail} from 'react-icons/md'
 import {FaFacebookMessenger} from 'react-icons/fa'
 import {BsWhatsapp} from 'react-icons/bs'
 import emailjs from 'emailjs-com'
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 
 
 function Contact() {
@@ -15,12 +16,13 @@ function Contact() {
 
     emailjs.sendForm('service_bt19kw7', 'template_bvl593d', form.current, 'CaDH0elBmpz5TQ8os')
       .then((result) => {
-          console.log(result.text);
+          // console.log(result.text);
           e.target.reset()
-          swal({
-            icon: "success",
-            text: "Thank you! Your message has been received.",
-          });
+          // swal({
+          //   icon: "success",
+          //   text: "Thank you! Your message has been received.",
+          // });
+          toast('"Thank you! Your message has been received.')
       }, (error) => {
           console.log(error.text);
       });
