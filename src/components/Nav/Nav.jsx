@@ -34,7 +34,7 @@ useEffect(()=>{
 },[lastPos])
 
   return (
-    <motion.nav animate={{opacity: shouldShowNav ? 1 : 0}} initial={{opacity: 0}} transition={{opacity: {duration : 1}}}>
+    <motion.nav animate={{opacity: shouldShowNav ? 1 : 0}} initial={{opacity: 0}} transition={{opacity: {duration : 0.5}}}>
       <a href="#home" onClick={()=> setActiveNav('#home')} className={activeNav === '#home' ? 'active' : ''}><AiOutlineHome /></a>
       <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
       <a href="#experience" onClick={()=> setActiveNav("#experience")} className={activeNav === "#experience" ? "active" : ''}><FiBookOpen /></a>
