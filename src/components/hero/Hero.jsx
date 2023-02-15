@@ -18,7 +18,7 @@ const Hero = () => {
         type: "spring",
         bounce: 0.2,
         duration: 3,
-      },
+      }
     },
   };
   const rightVariant = {
@@ -45,6 +45,7 @@ const Hero = () => {
           initial={"hidden"}
           whileInView={"show"}
           transition={{ staggerChildren: 0.5 }}
+          viewport={{once: true}}
         >
           <motion.div className="hero-sub-cont-1" variants={leftVariant}>
             <p className="hello_text">

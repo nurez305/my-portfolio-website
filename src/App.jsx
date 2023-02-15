@@ -7,12 +7,13 @@ import Portfolio from "./components/Portfolio/Portfolio"
 import Footer from "./components/Footer/Footer"
 import Contact from './components/Contact/Contact'
 import Hero from './components/hero/Hero'
+import TopNav from './components/TopNav/TopNav'
 
 
 const App = () => {
   return (
     <>
-    {/* <Header /> */}
+    <TopNav />
     <Hero />
     <Nav />
     <About />
