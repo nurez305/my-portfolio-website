@@ -22,7 +22,7 @@ function Contact() {
           //   icon: "success",
           //   text: "Thank you! Your message has been received.",
           // });
-          toast('"Thank you! Your message has been received.')
+          toast('Thank you! Your message has been received.')
       }, (error) => {
           console.log(error.text);
       });
