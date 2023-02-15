@@ -20,9 +20,9 @@
     margin-right: 3rem;
 }
 
-.nav_content a:hover {
+/* .nav_content a:hover {
     background: rgba(191, 149, 149, 0.3);
-}
+} */
 .nav_content a.active {
     /* background: var(--color-primary); */
     color: orange;
