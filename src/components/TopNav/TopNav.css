@@ -46,7 +46,7 @@
 
     .nav_content{
         display: none;
-        border: 1px solid white;   
+        /* border: 1px solid white;    */
     }
 
     .main-container .show {
