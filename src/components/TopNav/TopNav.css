@@ -49,11 +49,12 @@
         /* border: 1px solid white;    */
     }
 
-    .main-container .show {
+    .show {
         display: block;
        }
 
-       #display-nav, #no-display {
+      #display-nav, 
+      #no-display {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -74,12 +75,12 @@
        }
        
        #no-display {
-        animation: slide-out 0.4s ease-in;
-        left: -100%;
+           left: -100%;
+           animation: slide-out 0.4s ease-in-out;
         
        }
     
-       #display-nav a, #no-display a {
+      #display-nav a, #no-display a {
         text-align: center;
         border-bottom: 0.5px solid white;
         width: 100%;
@@ -91,17 +92,17 @@
             transform: translateX(-100%);
         }
         100%{
-            transform: translateX(0%);
+            transform: translateX(0);
         }
         
        }
     
        @keyframes slide-out {
         0%{
-            transform: translateX(100%);
+            transform: translateX(0);
         }
         100%{
-            transform: translateX(-100);
+            transform: translateX(-100%);
         }
        }
 
