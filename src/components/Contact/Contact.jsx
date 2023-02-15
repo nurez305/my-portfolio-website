@@ -19,7 +19,7 @@ function Contact() {
           e.target.reset()
           swal({
             icon: "success",
-            text: "Thank you! Your messages have been received.",
+            text: "Thank you! Your message has been received.",
           });
       }, (error) => {
           console.log(error.text);
