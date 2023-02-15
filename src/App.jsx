@@ -1,5 +1,4 @@
 import React from 'react'
-import {ToastContainer} from 'react-toastify'
 // import Header from './components/Header/Header'
 import Nav from "./components/Nav/Nav"
 import About from "./components/About/About"
@@ -14,7 +13,6 @@ import TopNav from './components/TopNav/TopNav'
 const App = () => {
   return (
     <>
-    <ToastContainer />
     <TopNav />
     <Hero />
     <Nav />
