@@ -23,6 +23,7 @@ function TopNav() {
       <a href="#experience" onClick={()=> setActiveNav("#experience")} className={activeNav === "#experience" ? "active" : ''}>Skill</a>
       <a href="#portfolio" onClick={()=> setActiveNav("#portfolio")} className={activeNav === "#portfolio" ? 'active' : ""}>Projects</a>
       <a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>Contact</a>
+      <a href="https://nurezblog.netlify.app/"><button className='blog-btn'>Visit My Blog</button></a>
     </div>
 
         <div className='show' onClick={showIcon}>

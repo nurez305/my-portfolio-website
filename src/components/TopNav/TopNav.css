@@ -16,8 +16,9 @@
 .nav_content {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-right: 3rem;
+    align-items: center;
+    gap: 1.7rem;
+    margin-right: 1.7rem;
 }
 
 /* .nav_content a:hover {
@@ -41,12 +42,41 @@
     display: none;
 }
 
+.menu-flex{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.blog-btn {
+    border: 2px solid white;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.blog-btn:hover {
+    background: white;
+    color: black;
+}
+
 
 @media screen and (max-width : 600px) {
 
+    .blog-btn {
+        padding: 1rem 2rem;
+        font-size: 16px;
+    }
+
     .nav_content{
         display: none;
-        /* border: 1px solid white;    */
+        border-top: 1px solid white;   
+        border-bottom: 1px solid white;  
     }
 
     .show {
