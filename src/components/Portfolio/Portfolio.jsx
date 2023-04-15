@@ -22,9 +22,9 @@ const data = [
     id: 2,
     image: IMG2,
     title: 'An  E-commerce App',
-    desc: "A responsive e-commerce application built with react and stripe for product checkout.",
-    github: 'https://github.com/nurez305/project_e_commerce-main',
-    demo : 'http://nurez-store.netlify.app'
+    desc: "A responsive e-commerce application built with React, Css module and Paystack for product checkout.",
+    github: 'https://github.com/nurez305/al-nur-store',
+    demo : 'https://al-nur-store.netlify.app/'
   },
 
   {
