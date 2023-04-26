@@ -29,6 +29,18 @@
     color: orange;
 }
 
+.main-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main-logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
 .logo_text{
     font-size: 20px;
     font-weight: bold;

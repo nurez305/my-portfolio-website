@@ -3,6 +3,7 @@ import './TopNav.css'
 import {useState} from 'react'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {FaTimes} from 'react-icons/fa'
+import Logo from "../../assets/mylogo.jpeg"
 
 function TopNav() {
     const [activeNav, setActiveNav] = useState('#home')
@@ -14,7 +15,8 @@ function TopNav() {
 
   return (
     <main className='main-container'>
-        <div>
+        <div className='main-logo'>
+          <img src={Logo} alt="" />
             <span className='logo_text'>Code<span className='logo_with'>With</span>Nurez</span>
         </div>
     <div onClick={showIcon} className='nav_content' id={showMenu ? 'display-nav': 'no-display'}>
