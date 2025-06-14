@@ -2,7 +2,7 @@ import "./hero.css";
 import ME from '../../assets/programmer.png'
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import CV from '../../assets/Saliu nurudeen.pdf'
+import CV from '../../assets/Nurudeen_saliu_resume.pdf'
 
 const Hero = () => {
   //framer motion animation variants
