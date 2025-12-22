@@ -50,7 +50,7 @@ function About() {
             </article>
           </div>
           <p>
-            I am a full-stack developer with over 4 years of experience,
+            I am a full-stack developer with over 5 years of experience,
             specializing in Javascript, Typescript, and Flutter. I have
             experience in developing and deploying websites utilizing various
             open-source packages. I have extensive experience in HTML, CSS,

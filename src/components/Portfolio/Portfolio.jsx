@@ -7,6 +7,7 @@ import IMG10 from '../../assets/IMG-10.png'
 import IMG4 from '../../assets/youtube.png'
 import IMG5 from '../../assets/school.png'
 import IMG6 from '../../assets/meal-order.png'
+import IMG7 from '../../assets/mini-wallet.png'
 
 const data = [
   {
@@ -26,9 +27,17 @@ const data = [
     github: 'https://github.com/nurez305/al-nur-store',
     demo : 'https://al-nur-store.netlify.app/'
   },
+    {
+    id: 3,
+    image: IMG7,
+    title: 'A Mini Wallet App',
+    desc: "A responsive mini wallet application built with React, typescript, zustand and tailwindCss for styling.",
+    github: 'https://github.com/nurez305/mini-wallet',
+    demo : 'https://nurezminiwallet.netlify.app/'
+  },
 
   {
-    id: 3,
+    id: 4,
     image: IMG6,
     title: 'A Meal order App',
     desc: "A full-stack responsive application for ordering Nigerian foods. The client-side was built with ReactJs, and the server side was built with Nodejs, Express, and MongoDB for the database.",
@@ -37,7 +46,7 @@ const data = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: IMG10,
     title: 'A Payment UI/UX',
     desc: "Modern UI/UX website using React.js & Tailwind CSS",
@@ -45,7 +54,7 @@ const data = [
     demo : 'https://bankpay.netlify.app/'
   },
   {
-    id: 5,
+    id: 6,
     image: IMG3,
     title: 'A Movie App',
     desc: "This is a basic Movie Search Application where you can search for any movie of your choice. You pass in a keyword in the search bar and movies related to your keyword will be displayed.",
@@ -54,7 +63,7 @@ const data = [
 
   },
   {
-    id: 6,
+    id: 7,
     image: IMG4,
     title: 'Youtune Clone App',
     desc: "A fully responsive youtube clone app built with React, Materia-Ui and Rapid-Api.",
@@ -63,7 +72,7 @@ const data = [
 
   },
   {
-    id: 7,
+    id: 8,
     image: IMG5,
     title: 'Multipage school website',
     desc: "A complete responsive multi-page education/school website built with HTML, CSS, and javascript.",
