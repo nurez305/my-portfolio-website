@@ -10,7 +10,9 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
-
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
+    height: 100%; /* Add this to make all cards equal height */
 }
 
 .portfolio_item:hover {
@@ -18,44 +20,146 @@
     background: transparent;
 }
 
+/* Fix for image container */
 .portfolio_item-img {
     border-radius: 1.5rem;
     overflow: hidden;
+    height: 200px; /* Fixed height for all images */
+    min-height: 200px; /* Ensures minimum height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.05); /* Fallback background if image doesn't load */
+}
+
+/* Fix for images */
+.portfolio_item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures images fill the container without distortion */
+    display: block;
 }
 
 .portfolio_item h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 1rem; /* Reduced bottom margin */
+    font-size: 1.2rem;
+    line-height: 1.4;
+    min-height: 3.5em; /* Ensure consistent height for 2 lines */
 }
 
-.portfolio_item p{
-    margin-bottom: 2rem;
-    font-size: 12px;
+.portfolio_item p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    flex-grow: 1; /* Makes description take available space */
+    min-height: 4.5em; /* Ensure consistent height for 3 lines */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
 }
 
-.portfolio_item-cta{
+.portfolio_item-cta {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-top: auto; /* This pushes buttons to bottom */
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/* Button styles for consistency */
+.portfolio_item-cta a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    flex: 1; /* Makes both buttons equal width */
+    min-width: 100px;
+}
+
+.portfolio_item-cta .btn {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.portfolio_item-cta .btn:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.portfolio_item-cta .btn-primary {
+    background: var(--color-primary);
+    color: white;
+    border: 1px solid var(--color-primary);
+}
+
+.portfolio_item-cta .btn-primary:hover {
+    background: transparent;
+    color: var(--color-primary);
+}
 
 /* MEDIA QUERY FOR MEDIUM SCREEN */
-
-@media screen and (max-width : 1024px) {
+@media screen and (max-width: 1024px) {
     .portfolio_container {
         grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .portfolio_item-img {
+        height: 180px;
+        min-height: 180px;
+    }
+}
+
+/* MEDIA QUERIES FOR SMALL SCREEN */
+@media screen and (max-width: 768px) {
+    .portfolio_container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .portfolio_item-img {
+        height: 200px;
+        min-height: 200px;
+    }
+    
+    .portfolio_item p {
+        min-height: auto;
+        -webkit-line-clamp: 4; /* Show more lines on mobile */
+    }
+}
+
+/* Additional media query for very small screens */
+@media screen and (max-width: 480px) {
+    .portfolio_container {
         gap: 1.2rem;
     }
-   
-   }
-   
-   
-   /* MEDIA QUERIES FOR SMALL SCREEN */
-   
-   @media screen and (max-width : 600px) {
-    .portfolio_container{
-        grid-template-columns: 1fr;
-        gap: 1rem;
+    
+    .portfolio_item {
+        padding: 1rem;
+        border-radius: 1.5rem;
     }
-      
-   }
+    
+    .portfolio_item-img {
+        height: 160px;
+        min-height: 160px;
+        border-radius: 1rem;
+    }
+    
+    .portfolio_item-cta {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .portfolio_item-cta a {
+        width: 100%;
+    }
+}
