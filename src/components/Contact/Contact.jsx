@@ -4,7 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 function Contact() {
   const form = useRef();
@@ -31,21 +31,21 @@ function Contact() {
       e.target.reset();
       setIsSubmitted(true);
 
-    Swal.fire({
-  icon: 'success',
-  title: 'Message Sent!',
-  text: 'Thank you! Your message has been received. I will get back to you soon.',
-  timer: 3000,
-  showConfirmButton: false,
-  background: '#f3f7f9',
-  color: '#0369a1',
-  width: 350,
-  padding: '1rem',
-  customClass: {
-    title: 'my-swal2-title',
-    container: 'my-swal2-container'
-  }
-});
+      Swal.fire({
+        icon: "success",
+        title: "Message Sent!",
+        text: "Thank you! Your message has been received. I will get back to you soon.",
+        timer: 3000,
+        showConfirmButton: false,
+        background: "#f3f7f9",
+        color: "#0369a1",
+        width: 350,
+        padding: "1rem",
+        customClass: {
+          title: "my-swal2-title",
+          container: "my-swal2-container",
+        },
+      });
 
       // Reset submission state after 5 seconds to allow new messages
       setTimeout(() => {
