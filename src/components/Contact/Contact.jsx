@@ -31,13 +31,21 @@ function Contact() {
       e.target.reset();
       setIsSubmitted(true);
 
-      Swal.fire({
-        icon: "success",
-        title: "Message Sent!",
-        text: "Thank you! Your message has been received. I'll get back to you soon.",
-        buttons: false,
-        timer: 3000,
-      });
+    Swal.fire({
+  icon: 'success',
+  title: 'Message Sent!',
+  text: 'Thank you! Your message has been received. I will get back to you soon.',
+  timer: 3000,
+  showConfirmButton: false,
+  background: '#f3f7f9',
+  color: '#0369a1',
+  width: 350,
+  padding: '1rem',
+  customClass: {
+    title: 'my-swal2-title',
+    container: 'my-swal2-container'
+  }
+});
 
       // Reset submission state after 5 seconds to allow new messages
       setTimeout(() => {
