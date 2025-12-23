@@ -50,27 +50,35 @@ function About() {
             </article>
           </div>
           <p>
-            I am a full-stack developer with over 5 years of experience,
-            specializing in Javascript, Typescript, and Flutter. I have
-            experience in developing and deploying websites utilizing various
-            open-source packages. I have extensive experience in HTML, CSS,
-            JavaScript, Typescript, NodeJS, ExpressJS, ReactJS, MongoDB, Docker
-            and Dockerhub, TDD with Jest, and Git and Github. <br /> <br /> 
-            I am skilled in
-            using these frameworks to develop web applications based on Single
-            Page Applications (SPA) architectures. I also possess skills in
-            writing SQL queries using popular database servers such as MySQL. In
-            addition to my development work, I am skilled at troubleshooting
-            problems and resolving bugs within an existing system. <br /> <br /> 
-            Other skills
-            include scrum, agile methodology, Jira, communication, and team
-            coordination. If it will solve a problem, I want to be part of it.
-            Just send a{" "}
+            I am a dedicated frontend developer with over 5 years of experience,
+            specializing in JavaScript, TypeScript, React, and modern web
+            architectures. My focus is on building responsive, high-performance
+            user interfaces, but I also bring valuable full-stack perspective
+            with backend experience in Node.js, Express, and database systems.
+            <br />
+            <br />
+            My core expertise lies in crafting interactive experiences using
+            React and Next.js, backed by a strong command of HTML, CSS, and
+            modern JavaScript (ES6+). On the frontend, I am experienced with
+            state management (Context API, Redux), testing (Jest, React Testing
+            Library), and build tools. I complement this with backend
+            proficiency in building RESTful APIs with Node.js and Express, and
+            working with databases like MongoDB and MySQL.
+            <br />
+            <br />
+            I thrive on solving complex problems and am skilled at diagnosing
+            and fixing issues across the stack. I work effectively in
+            Agile/Scrum environments using tools like Jira and am committed to
+            clear communication and team collaboration.
+            <br />
+            <br />
+            If you have a challenging frontend problem to solve, I would love to
+            be part of the solution. Just send a{" "}
             <span className="anchor_message">
               <a href="#contact">click-to-message</a>
             </span>
-            . Solving problems with tech excites me. I am open to working with
-            you.
+            . Building great products excites me, and I am eager to contribute
+            to your team.
           </p>
 
           <a href="#contact" className="btn btn-primary">
