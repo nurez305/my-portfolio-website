@@ -42,7 +42,7 @@
 }
 
 .portfolio_item h3 {
-    margin: 1.2rem 0 1rem; /* Reduced bottom margin */
+    margin: 1.2rem 0 0rem;
     font-size: 1.2rem;
     line-height: 1.4;
     min-height: 3.5em; /* Ensure consistent height for 2 lines */
@@ -52,8 +52,8 @@
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
     line-height: 1.5;
-    flex-grow: 1; /* Makes description take available space */
-    min-height: 4.5em; /* Ensure consistent height for 3 lines */
+    flex-grow: 1; 
+    min-height: 8.9em; 
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Limit to 3 lines */

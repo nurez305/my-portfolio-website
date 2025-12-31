@@ -10,15 +10,15 @@ import IMG6 from '../../assets/meal-order.png'
 import IMG7 from '../../assets/mini-wallet.png'
 
 const data = [
-  {
+     {
     id: 1,
-    image: IMG1,
-    title: 'Airtime-to-cash App',
-    desc: "The Airtime to Cash app allows users to sell their airtime for cash. It features a wallet, which holds the funds users receive in return for sold airtime and allows for withdrawal of those funds into the user’s designated bank account.",
-    github: 'https://github.com/nurez305/Airtime-2-cash-app',
-    demo : 'https://airtime-to-cash-frontend-master.vercel.app/'
-
+    image: IMG7,
+    title: 'A Mini Wallet App',
+    desc: "A personal finance app for managing accounts, transactions, budgets, and recurring payments. Features responsive design, dark/light themes, and CSV import/export. Built with React, TypeScript, and Tailwind CSS.",
+    github: 'https://github.com/nurez305/mini-wallet',
+    demo : 'https://nurezminiwallet.netlify.app/'
   },
+
   {
     id: 2,
     image: IMG2,
@@ -29,11 +29,12 @@ const data = [
   },
     {
     id: 3,
-    image: IMG7,
-    title: 'A Mini Wallet App',
-    desc: "A responsive mini wallet application built with React, typescript, zustand and tailwindCss for styling.",
-    github: 'https://github.com/nurez305/mini-wallet',
-    demo : 'https://nurezminiwallet.netlify.app/'
+    image: IMG1,
+    title: 'Airtime-to-cash App',
+    desc: "The Airtime to Cash app allows users to sell their airtime for cash. It features a wallet, which holds the funds users receive in return for sold airtime and allows for withdrawal of those funds into the user’s designated bank account.",
+    github: 'https://github.com/nurez305/Airtime-2-cash-app',
+    demo : 'https://airtime-to-cash-frontend-master.vercel.app/'
+
   },
 
   {
