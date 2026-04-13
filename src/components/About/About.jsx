@@ -100,26 +100,30 @@ function About() {
             <div className="rounded-[2rem] border border-line/80 bg-white/75 p-7 shadow-card transition-colors duration-500 dark:border-white/10 dark:bg-slate-900/70">
               <div className="grid gap-6">
                 <p className="text-base leading-8 text-ink-soft dark:text-slate-400">
-                  I am a dedicated frontend developer with over 5 years of
-                  experience, specializing in JavaScript, TypeScript, React, and
-                  modern web architecture. My focus is on building responsive,
-                  high-performance user interfaces, backed by a useful full-stack
-                  perspective for backend integration and product delivery.
+                  I am a frontend developer with 6+ years of experience
+                  building responsive, high-performance web products. I
+                  specialize in JavaScript, TypeScript, React, and modern
+                  frontend architecture, with enough full-stack depth to work
+                  confidently across APIs, backend integrations, and product
+                  delivery.
                 </p>
 
                 <p className="text-base leading-8 text-ink-soft dark:text-slate-400">
-                  My core strength is crafting interactive experiences with
-                  React and Next.js, supported by strong fundamentals in HTML,
-                  CSS, modern JavaScript, state management, and testing. I also
-                  work comfortably across Node.js, Express, MongoDB, and SQL
-                  systems when products need deeper technical ownership.
+                  My strongest work sits at the intersection of design and
+                  engineering: turning product ideas into polished interfaces
+                  that are accessible, scalable, and easy to maintain. I work
+                  comfortably with Next.js, state management, testing, and
+                  performance tuning, and I can step into Node.js, Express,
+                  MongoDB, and SQL systems when a product needs broader
+                  technical ownership.
                 </p>
 
                 <p className="text-base leading-8 text-ink-soft dark:text-slate-400">
-                  I enjoy solving complex UI problems, improving the quality of
-                  shipped experiences, and collaborating clearly with designers,
-                  product teams, and engineering partners. If you need someone
-                  who can bridge polish and practicality, I would love to talk.
+                  I enjoy solving messy UI problems, improving shipped
+                  experiences, and collaborating closely with designers,
+                  product teams, and engineers to turn ideas into reliable
+                  products. If you need someone who combines frontend precision
+                  with practical execution, I would love to talk.
                 </p>
 
                 <div className="flex flex-wrap gap-3">

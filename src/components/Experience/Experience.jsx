@@ -109,18 +109,20 @@ function Experience() {
                 {intro}
               </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4">
                 {skills.map((skill) => (
                   <div
                     key={skill}
-                    className="group flex items-start gap-3 rounded-[1.25rem] border border-line bg-parchment/55 px-4 py-4 transition duration-300 hover:-translate-y-1 hover:border-teal/50 hover:bg-white dark:border-white/10 dark:bg-slate-950/55 dark:hover:border-emerald-400/40 dark:hover:bg-slate-900"
+                    className="group flex items-start gap-2.5 rounded-[1.25rem] border border-line bg-parchment/55 px-3 py-3 transition duration-300 hover:-translate-y-1 hover:border-teal/50 hover:bg-white sm:gap-3 sm:px-4 sm:py-4 dark:border-white/10 dark:bg-slate-950/55 dark:hover:border-emerald-400/40 dark:hover:bg-slate-900"
                   >
-                    <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-teal shadow-sm dark:bg-slate-900 dark:text-emerald-400">
+                    <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white text-sm text-teal shadow-sm sm:h-8 sm:w-8 dark:bg-slate-900 dark:text-emerald-400">
                       <BsFillPatchCheckFill />
                     </div>
                     <div>
-                      <p className="font-semibold text-ink dark:text-white">{skill}</p>
-                      <p className="mt-1 text-sm text-ink-soft dark:text-slate-400">
+                      <p className="text-sm font-semibold text-ink sm:text-base dark:text-white">
+                        {skill}
+                      </p>
+                      <p className="mt-1 text-xs text-ink-soft sm:text-sm dark:text-slate-400">
                         Experienced
                       </p>
                     </div>
