@@ -5,6 +5,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { FiArrowRight, FiSend } from "react-icons/fi";
+import "./Contact.css";
 
 const contactOptions = [
   {
@@ -29,6 +30,55 @@ const contactOptions = [
     cta: "Start WhatsApp chat",
   },
 ];
+
+const escapeHtml = (value = "") =>
+  String(value).replace(
+    /[&<>"']/g,
+    (char) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      })[char]
+  );
+
+const showContactModal = ({ title, message, variant }) => {
+  const isSuccess = variant === "success";
+  const isDarkMode = document.documentElement.classList.contains("dark");
+
+  return Swal.fire({
+    html: `
+      <div class="contact-modal__body">
+        <div class="contact-modal__icon contact-modal__icon--${variant}">
+          ${isSuccess ? "✓" : "!"}
+        </div>
+        <p class="contact-modal__eyebrow">
+          ${isSuccess ? "Message delivered" : "Something went wrong"}
+        </p>
+        <h3 class="contact-modal__title">${escapeHtml(title)}</h3>
+        <p class="contact-modal__text">${escapeHtml(message)}</p>
+      </div>
+    `,
+    showCloseButton: true,
+    showConfirmButton: true,
+    confirmButtonText: isSuccess ? "Close" : "Try again",
+    buttonsStyling: false,
+    timer: isSuccess ? 4500 : undefined,
+    timerProgressBar: isSuccess,
+    background: isDarkMode ? "#0f172a" : "#fffdf8",
+    color: isDarkMode ? "#f8fafc" : "#0f172a",
+    backdrop: isDarkMode ? "rgba(2, 6, 23, 0.82)" : "rgba(15, 23, 42, 0.42)",
+    customClass: {
+      container: "contact-modal-container",
+      popup: `contact-modal-popup contact-modal-popup--${variant}`,
+      htmlContainer: "contact-modal-html",
+      confirmButton: "contact-modal-button",
+      closeButton: "contact-modal-close",
+    },
+  });
+};
 
 function Contact() {
   const form = useRef();
@@ -55,36 +105,23 @@ function Contact() {
       e.target.reset();
       setIsSubmitted(true);
 
-      Swal.fire({
-        icon: "success",
-        title: "Message Sent!",
-        text: "Thank you! Your message has been received. I will get back to you soon.",
-        timer: 3000,
-        showConfirmButton: false,
-        background: "#f3f7f9",
-        color: "#0369a1",
-        width: 350,
-        padding: "1rem",
-        customClass: {
-          title: "my-swal2-title",
-          container: "my-swal2-container",
-        },
+      await showContactModal({
+        title: "Message sent successfully",
+        message:
+          "Thanks for reaching out. Your message is in, and I will get back to you as soon as possible.",
+        variant: "success",
       });
 
-      // Reset submission state after 5 seconds to allow new messages
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
+      setIsSubmitted(false);
     } catch (error) {
       console.error("Email send error:", error);
 
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: `Failed to send message. Please try again. Error: ${
-          error.text || "Unknown error"
+      await showContactModal({
+        title: "Unable to send your message",
+        message: `Please try again in a moment. ${
+          error.text || "An unexpected error occurred."
         }`,
-        button: "Try Again",
+        variant: "error",
       });
     } finally {
       setIsLoading(false);
